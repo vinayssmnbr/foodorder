@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodService } from '../services/food/food.service';
 import { Foods } from '../shared/models/food';
-
+import { StarRatingComponent  } from 'ng-starrating/components/star-rating/star-rating.component';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

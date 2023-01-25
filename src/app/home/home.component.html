@@ -6,7 +6,19 @@
                 <div class="name">
                     {{food.name}}
                 </div>
-              
+                <star-rating [value]="food.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                    [readonly]="true"></star-rating>
+                    <div class="product-item-footer">
+                        <div class="origin">
+                            <span *ngFor="let origin of food.origins">
+                                {{origin}}
+                            </span>
+                        </div>
+                        <div class="price">
+                            {{food.price|currency}}
+                        </div>
+
+                    </div>
             </div>
         </a>
     </li>

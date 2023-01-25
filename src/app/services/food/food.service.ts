@@ -16,7 +16,7 @@ export class FoodService {
         cookTime:'20-30',
         favorite:true,
         origins:['persia','india'],
-        star:4.8,
+        star:2,
         imageUrl:'/assets/image.jpeg',
         tags:['slowFood','lunch']
       },
@@ -27,7 +27,7 @@ export class FoodService {
         cookTime:'20-30',
         favorite:true,
         origins:['persia','india'],
-        star:4.8,
+        star:4,
         imageUrl:'/assets/images.jpeg',
         tags:['slowFood','lunch']
       },
@@ -38,7 +38,7 @@ export class FoodService {
         cookTime:'20-30',
         favorite:true,
         origins:['persia','india'],
-        star:4.8,
+        star:3,
         imageUrl:'/assets/img.jpeg',
         tags:['slowFood','lunch']
       },
@@ -49,7 +49,7 @@ export class FoodService {
         cookTime:'20-30',
         favorite:true,
         origins:['persia','india'],
-        star:4.8,
+        star:3,
         imageUrl:'/assets/imgs.jpeg',
         tags:['slowFood','lunch']
       }
