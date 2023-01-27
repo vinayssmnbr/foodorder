@@ -7,7 +7,7 @@ ul{
     padding: 0;
 }
 ul li a{
-    height:20rem;
+    height:19rem;
     width:18rem;
     border: 1px solid whitesmoke;
     border-radius: 1rem;
@@ -22,4 +22,41 @@ ul li a{
 li a:hover{
     opacity: 0.9;
     cursor:pointer
+}
+
+.container{
+    padding:.5rem 1rem;
+    position: relative;
+}
+.star{
+    margin-bottom: .2rem;
+}
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.origin{
+    flex: 9;
+
+}
+.origin span{
+    border-radius: 2rem;
+    background-color: whitesmokecolor;
+    color: gray;
+    font-size: .8rem;
+    margin-right: .3rem;
+    display: inline-block;
+
+}
+.cook-time{
+    font-size: .8rem;
+    flex: 2;
+    text-align: right;
+
+}
+.price{
+    color:#424242;
+    margin-top: .2rem;
 }
