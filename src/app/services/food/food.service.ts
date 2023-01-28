@@ -1,12 +1,33 @@
 import { Injectable } from '@angular/core';
 import { Foods } from 'src/app/shared/models/food';
+import { Tag } from 'src/app/shared/models/tag';
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
 
   constructor() { }
+  getAllFoodByTag(tag:string):Foods[]{
+    if(tag=='All')
+    return this.getAll()
+    else
+    return this.getAll().filter(food=>food.tags?.includes(tag))
 
+  }
+
+  getAllTag():Tag[]{
+    return[
+      {name:'All',count:4},
+      {name:'FastFood',count:1},
+      {name:'Lunch',count:1},
+      {name:'Snacks',count:1},
+      {name:'BreakFast',count:1},
+     
+
+    ];
+
+  }
+ 
   getAll():Foods[]{
     return [
       {
@@ -18,7 +39,7 @@ export class FoodService {
         origins:['persia','india'],
         star:2,
         imageUrl:'/assets/image.jpeg',
-        tags:['slowFood','lunch']
+        tags:['Snacks']
       },
       {
         id:2,
@@ -29,7 +50,7 @@ export class FoodService {
         origins:['persia','india'],
         star:4,
         imageUrl:'/assets/images.jpeg',
-        tags:['slowFood','lunch']
+        tags:['slowFood','Lunch']
       },
       {
         id:3,
@@ -40,7 +61,7 @@ export class FoodService {
         origins:['persia','india'],
         star:3,
         imageUrl:'/assets/img.jpeg',
-        tags:['slowFood','lunch']
+        tags:['slowFood','FastFood']
       },
       {
         id:4,
@@ -51,7 +72,7 @@ export class FoodService {
         origins:['persia','india'],
         star:3,
         imageUrl:'/assets/imgs.jpeg',
-        tags:['slowFood','lunch']
+        tags:['slowFood','BreakFast']
       }
 
 
