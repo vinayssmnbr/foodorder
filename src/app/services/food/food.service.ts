@@ -7,6 +7,10 @@ import { Tag } from 'src/app/shared/models/tag';
 export class FoodService {
 
   constructor() { }
+  getFoodById(id:number):Foods{
+    return this.getAll().find(food =>food.id==id)!;
+  }
+
   getAllFoodByTag(tag:string):Foods[]{
     if(tag=='All')
     return this.getAll()
@@ -32,7 +36,7 @@ export class FoodService {
     return [
       {
         id:1,
-        name:'burgur',
+        name:'chapati',
         price:40,
         cookTime:'20-30',
         favorite:true,
@@ -43,7 +47,7 @@ export class FoodService {
       },
       {
         id:2,
-        name:'chapati',
+        name:'Burgur',
         price:40,
         cookTime:'20-30',
         favorite:true,

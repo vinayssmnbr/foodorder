@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Cart } from '../shared/models/Cart';
-import { CartItem } from '../shared/models/CartItem';
+import { CartItem } from '../shared/models/cartItem';
 
 import { Foods } from '../shared/models/food';
 
