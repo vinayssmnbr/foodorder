@@ -81,10 +81,12 @@ img{
     padding: 1rem;
     border-radius: 10rem;
     outline: none;
+    box-shadow: 0 0 4px #a05a5a;
 
 }
 
 .details button:hover{
-    opacity: .9;
+    /* opacity: .9; */
     cursor: pointer;
+    box-shadow: 2px 2px 6px #a05a5a;
 }

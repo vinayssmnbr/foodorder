@@ -37,7 +37,7 @@ export class FoodService {
       {
         id:1,
         name:'chapati',
-        price:40,
+        price:30,
         cookTime:'20-30',
         favorite:true,
         origins:['persia','india'],
@@ -48,7 +48,7 @@ export class FoodService {
       {
         id:2,
         name:'Burgur',
-        price:40,
+        price:25,
         cookTime:'20-30',
         favorite:true,
         origins:['persia','india'],
@@ -59,7 +59,7 @@ export class FoodService {
       {
         id:3,
         name:'Noodels',
-        price:40,
+        price:60,
         cookTime:'20-30',
         favorite:true,
         origins:['persia','india'],
