@@ -12,7 +12,7 @@ export class CartPageComponent {
 cart!:Cart
 constructor(private cartService:CartService){
  
-
+ 
   this.setCart()
 }
 
